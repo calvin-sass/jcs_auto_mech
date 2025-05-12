@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<!-- This website was created by: Calvin Sass -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Jcs Auto Mech | Payment</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Flex:opsz,wght@8..144,500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+  
+  <!-- JavaScript Link -->
+  <script src="script.js" defer></script>
+
+  <!-- jQuery CDN Link -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body> 
+
+	<div id="container">
+
+		<!-- Navigation Bar -->
+		<header class="banner">
+
+				<nav class="top-nav tablet">
+					<a href="index.html"><img src="images/bosch-service-logo.png" alt="Jcs Auto Mech Logo"></a>
+					<p>Jcs Auto Mech</p>
+					<div class="nav-links">
+						<ul>
+							<li class="listItem"><a href="index.html">Home</a></li>
+							<li class="listItem"><a href="about.html">About</a></li>
+							<li class="listItem"><a href="staff.html">Staff</a></li>
+							<li class="listItem"><a href="product.html">Services</a></li>
+							<li class="listItem"><a href="contact.html">Contact</a></li>
+              <li class="listItem drop-menu"><a class="drop-btn">Store <span id="drop-down">&#11167;</span></a></li>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="invoice.html">Maintenance</a></li>
+                  <li class="sub-item"><a href="invoice.html">Mobile</a></li>
+                  <li class="sub-item"><a href="invoice.html">A/C Systems</a></li>
+                  <li class="sub-item"><a href="invoice.html">Other</a></li>
+                </ul>
+							<li id="btn"><a href="form.html" class="btn">Get A Quote</a></li>
+							<li><a href="form.html" class="m-btn mobile">Get A Quote</a></li>
+						</ul>
+					</div>
+				</nav>
+
+				<div class="banner-text tablet-desktop">
+					<h1>Payment Gateway</h1>
+				</div>
+
+		</header>
+
+		<!-- Use the main area to add the main content of the webpage -->
+		<main class="formsubmit">
+
+      <div class="order-info">
+
+        <h2 class="order-title">Your Order</h2>
+
+        <form id="orderInfo" name="orderInfo">
+          <!-- Service group 1 -->
+								<div class="userService">
+									<label for="maintenance">Vehicle Maintenance</label>								
+									<input type="text" id="maintenance2" name="maintenance2" readonly />
+								</div>
+
+								<!-- Service group 2 -->
+								<div class="userService">
+									<label for="communication">Mobile Communication</label>
+									<input type="text" id="communication2" name="communication2" readonly />
+								</div>
+
+								<!-- Service group 3 -->
+								<div class="userService">
+									<label for="ac">A/C Systems</label>
+									<input type="text" id="ac2" name="ac2" readonly />
+								</div>
+
+								<!-- Service group 4 -->
+								<div class="userService">
+									<label for="other">Other Services</label>
+									<input type="text" id="other2" name="other2" readonly />
+								</div>
+        </form>
+
+        <div class="amount2">
+          <!-- Subtotal -->
+          <div class="subtotal2">
+            <span>Subtotal</span> <span>R <span id="subtotal2">0.00</span> </span> 
+          </div>
+
+          <!-- Value Added Tax (VAT) -->
+          <div class="tax2">
+            <span>VAT (14%)</span> <span>R <span id="tax2">0.00</span> </span> 
+          </div>
+
+          <!-- Total Amount -->
+          <div class="total2">
+            <span>Total</span> <span>R <span id="total2">0.00</span> </span> 
+          </div>
+        </div>
+
+      </div>
+
+			<div class="payment-container">
+
+        <form class="payment" name="payment">
+
+          <div class="row">
+
+            <div class="col">
+
+              <h3 class="payment-title">Billing Address</h3>
+
+              <div class="paymentInput">
+                <span>Full Name: </span>
+                <input type="text" id="name2" name="name2" placeholder="John Doe" required autocomplete="on">
+              </div>
+              <div class="paymentInput">
+                <span>Email: </span>
+                <input type="email" id="email2" name="email2" placeholder="example@example.com" required autocomplete="on">
+              </div>
+              <div class="paymentInput">
+                <span>Address: </span>
+                <input type="text" id="address" name="address" placeholder="Street, Suburb, City" required autocomplete="on">
+              </div>
+              <div class="paymentInput">
+                <span>City: </span>
+                <input type="text" id="city" name="city" placeholder="Cape Town"required>
+              </div>
+              <div class="payment-flex">
+                <div class="paymentInput">
+                  <span>Province: </span>
+                  <input type="text" id="zip-code" name="zip-code" placeholder="Western Cape" required>
+                </div>
+                <div class="paymentInput">
+                  <span>Zip Code: </span>
+                  <input type="text" id="zip-code" name="zip-code" placeholder="6835" required>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col">
+
+              <h3 class="payment-title">Payment</h3>
+
+              <div class="paymentInput">
+                <span>Accepted Cards: </span>
+                <img src="images/card-img.png" alt="images of bank cards">
+              </div>
+              <div class="paymentInput">
+                <span>Name On Card: </span>
+                <input type="text" id="card-name" name="card-name" required placeholder="Mr. John Doe">
+              </div>
+              <div class="paymentInput">
+                <span>Credit Card Number: </span>
+                <input type="text" id="card-number" placeholder="1111222233334444" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$">
+              </div>
+              <div class="paymentInput">
+                <span>Exp Month: </span>
+                <select id="exp-month" name="exp-month">
+                  <option value="mm">mm</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                  <option value="04">04</option>
+                  <option value="05">05</option>
+                  <option value="06">06</option>
+                  <option value="07">07</option>
+                  <option value="08">08</option>
+                  <option value="09">09</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+               </select>
+              </div>
+              <div class="payment-flex">
+                <div class="paymentInput">
+                  <span>Exp Year: </span>
+                  <select id="exp-year" name="exp-year">
+                    <option value="yy">yy</option>
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                 </select> 
+                </div>
+                <div class="paymentInput">
+                  <span>CVV: </span>
+                  <input id="cvv" type="text" placeholder="444" name="cvv" required pattern="^\d{3,4}$">
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <input type="submit" value="Check Out" id="formsubmit-btn">
+
+        </form>
+      
+      </div>
+
+		</main>
+
+		<!-- Use this footer area to add navigation to the website -->
+		<div class="footer grid">
+
+      <div class="social">
+        <p>Follow us on social media to get updates on our sales and services.</p>
+        <ul>
+          <li><a href="https://www.facebook.com/jcsautomechanical" target="_blank"><img src="images/facebook-icon.png" alt="facebook icon"></a></li>
+          <li><a href="https://www.boschcarservice.com/za/en" target="_blank"><img src="images/bosch-service-logo.png" alt="bosch service logo"></a></li>
+        </ul>
+      </div>
+
+      <div id="quick-links">
+          <h2>Quick Links</h2>
+          <ul>
+						<li><a href="#about">Get familiar with us</a></li>
+            <li><a href="https://www.boschcarservice.com/za/en" target="_blank">Bosch Car Service World Wide &reg;</a></li>
+          </ul>
+      </div>
+
+      <div id="bottom-nav">
+        <h2>Navigation</h2>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="form.html">Get A Quote</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="contact">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>023 315 6675</li>
+          <li><a href="mailto:jcsautomechanical@yahoo.com">jcsautomechanical@yahoo.com</a></li>
+          <li>32 Farmwell Building <br> Vos Street</li>
+        </ul>
+      </div>
+
+    </div>
+		
+		<!-- Use the footer area to add webpage footer content -->
+		<footer>
+			<p>&copy; Robert Bosch (Pty) Ltd. 2021, all rights reserved</p>
+		</footer>
+
+	</div>
+</body>
+</html>

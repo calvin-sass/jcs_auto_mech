@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- This website was created by: Calvin Sass -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Jcs Auto Mech | Store</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Flex:opsz,wght@8..144,500&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+	
+	<!-- JavaScript Link -->
+  <script src="script.js" defer></script>
+
+  <!-- jQuery CDN Link -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div id="container">
+
+		<!-- Navigation Bar -->
+		<header class="banner">
+
+			<nav class="top-nav tablet">
+				<a href="index.html"><img src="images/bosch-service-logo.png" alt="Jcs Auto Mech Logo"></a>
+				<p>Jcs Auto Mech</p>
+				<div class="nav-links">
+					<ul>
+						<li class="listItem"><a href="index.html">Home</a></li>
+						<li class="listItem"><a href="about.html">About</a></li>
+						<li class="listItem"><a href="staff.html">Staff</a></li>
+						<li class="listItem"><a href="product.html">Services</a></li>
+						<li class="listItem"><a href="contact.html">Contact</a></li>
+						<li class="listItem drop-menu"><a class="drop-btn">Store <span id="drop-down">&#11167;</span></a></li>
+                <ul class="sub-menu">
+                  <li class="sub-item"><a href="invoice.html">Maintenance</a></li>
+                  <li class="sub-item"><a href="invoice.html">Mobile</a></li>
+                  <li class="sub-item"><a href="invoice.html">A/C Systems</a></li>
+                  <li class="sub-item"><a href="invoice.html">Other</a></li>
+                </ul>
+						<li id="btn"><a href="form.html" class="btn">Get A Quote</a></li>
+						<li><a href="form.html" class="m-btn mobile">Get A Quote</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<div class="banner-text tablet-desktop">
+				<h1>Store</h1>
+			</div>
+
+		</header>
+
+		<!-- Use the main area to add the main content of the webpage -->
+		<main>
+
+			<!-- Service Store -->
+			<div class="storeContainer">
+
+				<h1 class="heading">
+					Shopping Cart
+				</h1>
+
+				<div class="flex">
+
+					<!-- Services Details -->
+					<section class="buyServices">
+
+						<div class="serviceForm">
+
+							<h2 class="sectionHeading">Service Details</h2>
+
+							<form id="service-form" name="service-form" action="formsubmit.html">
+
+								<!-- Service group 1 -->
+								<div class="userService">
+									<label for="maintenance">Vehicle Maintenance</label>
+									<select name="maintenance" id="maintenance">
+										<option value="0.00" selected>Add to cart</option>
+										<option value="1230.00">Inspection</option>
+										<option value="1430.00">Shock absorbers</option>
+										<option value="2150.20">Clutch</option>
+										<option value="3499.00">Brake</option>
+										<option value="4200.00">Exhaust systems</option>
+										<option value="1499.00">Tyres</option>
+										<option value="4325.50">Electric/electronic systems</option>
+										<option value="2310.99">Gasoline injection</option>
+										<option value="2599.00">Diesel injection</option>
+										<option value="1120.00">Periodical inspection (MOT, TUV, Dekra)</option>
+										<option value="980.00">Emission tests(AU)</option>
+									</select>
+									<input type="hidden" id="maintenance2" name="maintenance2">
+								</div>
+
+								<!-- Service group 2 -->
+								<div class="userService">
+									<label for="communication">Mobile Communication</label>
+									<select name="communication" id="communication">
+										<option value="0.00" selected>Add to cart</option>
+										<option value="780.00">Audio Hi-Fi</option>
+										<option value="999.00">Car kits</option>
+										<option value="1299.00">Navigation systems</option>
+										<option value="650.00">Telematics</option>
+									</select>
+									<input type="hidden" id="mobile-communication-choice" name="communication2">
+								</div>
+
+								<!-- Service group 3 -->
+								<div class="userService">
+									<label for="ac">A/C Systems</label>
+									<select name="ac" id="ac">
+										<option value="0.00" selected>Add to cart</option>
+										<option value="2300.00">A/C Systems</option>
+										<option value="4150.00">Stationary heating system</option>
+									</select>
+									<input type="hidden" id="ac2" name="ac2">
+								</div>
+
+								<!-- Service group 4 -->
+								<div class="userService">
+									<label for="other">Other Services</label>
+									<select name="other" id="other">
+										<option value="0.00" selected>Add to cart</option>
+										<option value="5300.00">Chip tuning</option>
+										<option value="3870.00">Lubrication</option>
+										<option value="7540.00">Engine repairs</option>
+										<option value="5350.00">Gearbox repairs</option>
+										<option value="6430.00">Diesel diagnostics</option>
+									</select>
+									<input type="hidden" id="other2" name="other2">
+								</div>
+
+								<div class="flex-buttons">
+									<!-- Submit Button -->
+									<div>
+										<input type="submit" id="checkout" value="Proceed to Checkout"></input>
+									</div>
+			
+									<!-- Reset Button -->
+									<div>
+										<button type="reset" id="reset">Reset</button>
+									</div>
+			
+									</div>
+
+							</form>
+						</div>
+						
+					</section>
+
+					<!-- Cart Section -->
+					<section class="cart">
+
+						<!-- This section is to display the Total Amount -->
+						<div class="amount">
+
+							<!-- Subtotal -->
+							<div class="subtotal">
+								<span>Subtotal</span> <span>R <span id="subtotal">0.00</span> </span> 
+							</div>
+
+							<!-- Value Added Tax (VAT) -->
+							<div class="tax">
+								<span>VAT (14%)</span> <span>R <span id="tax">0.00</span> </span> 
+							</div>
+
+							<!-- Total Amount -->
+							<div class="total">
+								<span>Total</span> <span>R <span id="total">0.00</span> </span> 
+							</div>
+
+						</div>
+
+					</section>
+
+				</div>
+			
+			</div>
+		
+		</main>
+						
+		<!-- Use this footer area to add navigation to the website -->
+		<div class="footer grid">
+
+      <div class="social">
+        <p>Follow us on social media to get updates on our sales and services.</p>
+        <ul>
+          <li><a href="https://www.facebook.com/jcsautomechanical" target="_blank"><img src="images/facebook-icon.png" alt="facebook icon"></a></li>
+          <li><a href="https://www.boschcarservice.com/za/en" target="_blank"><img src="images/bosch-service-logo.png" alt="bosch service logo"></a></li>
+        </ul>
+      </div>
+
+      <div id="quick-links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li><a href="https://www.boschcarservice.com/za/en" target="_blank">Bosch Car Service World Wide &reg;</a></li>
+          </ul>
+      </div>
+
+      <div id="bottom-nav">
+        <h2>Navigation</h2>
+        <nav>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="product.html">Services</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="contact">
+        <h2>Contact Us</h2>
+        <ul>
+          <li>023 315 6675</li>
+          <li><a href="mailto:jcsautomechanical@yahoo.com">jcsautomechanical@yahoo.com</a></li>
+          <li>32 Farmwell Building <br> Vos Street</li>
+        </ul>
+      </div>
+
+    </div>
+		
+		<!-- Use the footer area to add webpage footer content -->
+		<footer>
+			<p>&copy; Robert Bosch (Pty) Ltd. 2021, all rights reserved</p>
+		</footer>
+
+	</div>
+</body>
+</html>

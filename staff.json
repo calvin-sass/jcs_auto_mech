@@ -1,0 +1,47 @@
+{
+  "staff": [
+    {
+      "name": "Chris Visser",
+      "age": 40,
+      "country": "South Africa",
+      "city": "Ceres",
+      "position": "CEO"
+    },
+    {
+      "name": "Althea Jordaan",
+      "age": 29,
+      "country": "South Africa",
+      "city": "Ceres",
+      "position": "Receptionist"
+    },
+    {
+      "name": "Rethabile Thombi",
+      "age": 35,
+      "country": "South Africa",
+      "city": "Ceres",
+      "position": "Business Manager"
+    },
+    {
+      "name": "Austin Goliath",
+      "age": 28,
+      "country": "South Africa",
+      "city": "Ceres",
+      "position": "Diesel Mechanic"
+    },
+    {
+      "name": "Jason Smith",
+      "age": 33,
+      "country": "South Africa",
+      "city": "Ceres",
+      "position": "Automative Mechanic"
+    },
+    {
+      "name": "Xolile Zimba",
+      "age": 45,
+      "country": "South Africa",
+      "city": "Ceres",
+      "position": "Auto Body Mechanic"
+    }
+  ]
+}
+
