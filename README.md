@@ -4,19 +4,6 @@ Welcome to the **Jcs Auto Mech** website repository! This project is a fully res
 
 ---
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [File Structure](#file-structure)
-- [Setup Instructions](#setup-instructions)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Credits](#credits)
-- [License](#license)
-
----
-
 ## Overview
 
 The **Jcs Auto Mech** website is designed to provide customers with detailed information about the company's services, staff, and values. It includes interactive features such as a slideshow, a staff page, and a form for requesting quotes. The website is built with modern web technologies and is optimized for both desktop and mobile devices.
